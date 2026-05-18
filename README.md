@@ -36,7 +36,7 @@ AT bell payout is currently 9 medals, with rough AT net increase around +1.7 med
 
 - `BET`: start a game.
 - `1 STOP`, `2 STOP`, `3 STOP`: stop each reel.
-- `AUTO`: automatic play.
+- `AUTO`: automatic play with automatic reel stops.
 - `SKIP`: start/finish the current game quickly.
-- Click `WESKER` or press `D` to open stored data.
+- Left menu buttons open stored data panels.
 - Press `Esc` to close stored data.
