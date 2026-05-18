@@ -1,0 +1,6 @@
+*.zip
+*.log
+server.out.log
+server.err.log
+.DS_Store
+Thumbs.db
