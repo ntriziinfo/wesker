@@ -16,6 +16,18 @@ Open `wesker.html` in a browser, or serve this folder with a local static server
 - Bell increases payout during AT.
 - Rare roles add AT games.
 
+The target Wesker game specification is stored in `Documents/WESKER_SPEC.md`.
+
+## Target Wesker Spec
+
+- AT net increase is about 7.2 pt/G.
+- Revolution Bonus is a pseudo BIG: 50G + alpha, average about 470 pt, 666 pt payout guarantees RUSH.
+- After 666 pt in Revolution Bonus, remaining games run V-stock lottery.
+- Decisive Battle Bonus is a pseudo REG: bell navigation 8 times + battle, average about 110 pt, battle success about 35%.
+- Revolution RUSH has 75% continuation, 10 to 100G + alpha initial games, average about 1320 pt.
+- Super Revolution RUSH has 90% continuation, favored initial games, average about 2190 pt.
+- Reaching the 4th Revolution RUSH set upgrades to Super Revolution RUSH.
+
 ## Prototype Setting Targets
 
 These are rough simulation targets for the current prototype balance.
