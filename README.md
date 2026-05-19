@@ -35,14 +35,14 @@ The target Wesker game specification is stored in `Documents/WESKER_SPEC.md`.
 
 These are rough simulation targets for the current prototype balance.
 
-| Setting | Target rate | Simulated rough rate |
+| Setting | Target rate | Tuned rough rate |
 | --- | ---: | ---: |
-| 1 | 88% | 87.4% |
-| 2 | 92% | 91.9% |
-| 3 | 96% | 95.5% |
-| 4 | 102% | 101.1% |
-| 5 | 108% | 109.8% |
-| 6 | 116% | 117.1% |
+| 1 | 85% | 85.5% |
+| 2 | 90% | 90.3% |
+| 3 | 95% | 95.4% |
+| 4 | 101% | 101.4% |
+| 5 | 108% | 107.9% |
+| 6 | 115% | 115.4% |
 
 Simulation assumes 3 medals in per game, including AT games.
 AT bell payout is currently 9 medals, with rough AT net increase around +1.7 medals/G.

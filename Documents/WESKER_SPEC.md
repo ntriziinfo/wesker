@@ -7,6 +7,17 @@
 - Main route: normal / high-probability state -> CZ / bonus route -> RUSH.
 - Payout unit is managed as `pt` in the prototype.
 
+## Setting Targets
+
+| Setting | Machine rate target |
+| --- | ---: |
+| 1 | 85% |
+| 2 | 90% |
+| 3 | 95% |
+| 4 | 101% |
+| 5 | 108% |
+| 6 | 115% |
+
 ## Revolution Bonus
 
 Revolution Bonus is a pseudo BIG.
