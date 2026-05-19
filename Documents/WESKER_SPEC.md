@@ -49,6 +49,33 @@ Super Revolution RUSH is the upper AT.
 - Average payout: about 2190 pt.
 - Type: continuation loop + game-count add + set-stock.
 
+## Harakiri Challenge
+
+Harakiri Challenge is the continuation judgment zone entered after Revolution RUSH or Super Revolution RUSH ends.
+
+- Type: continuation lottery zone.
+- Length: 3G.
+- Tempo: ultra-fast continuation judgment.
+- Continuation rate after Revolution RUSH: about 77%.
+- Continuation rate after Super Revolution RUSH: about 90%.
+- Continuation rates include the 66G comeback lottery after returning to normal.
+
+## Harakiri Drive
+
+Harakiri Drive is a game-count add special zone.
+
+- Main reward: RUSH game-count add.
+- Expected feel: strong chance for three-digit add.
+
+## Comeback Lottery
+
+After a bonus or RUSH ends and the machine returns to normal, it internally enters a RUSH comeback state.
+
+- Trigger: Bonus end, Revolution RUSH end, or Super Revolution RUSH end.
+- Comeback state length: 66G.
+- Revolution RUSH comeback can return to Revolution RUSH or upgrade to Super Revolution RUSH.
+- Super Revolution RUSH comeback returns to Super Revolution RUSH.
+
 ## Implementation Notes
 
 - Current HTML prototype still uses the earlier simple CZ -> AT game-count flow.

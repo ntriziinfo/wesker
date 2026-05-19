@@ -27,6 +27,9 @@ The target Wesker game specification is stored in `Documents/WESKER_SPEC.md`.
 - Revolution RUSH has 75% continuation, 10 to 100G + alpha initial games, average about 1320 pt.
 - Super Revolution RUSH has 90% continuation, favored initial games, average about 2190 pt.
 - Reaching the 4th Revolution RUSH set upgrades to Super Revolution RUSH.
+- Harakiri Challenge is a 3G high-speed continuation judgment after RUSH, with about 77% after Revolution RUSH and about 90% after Super Revolution RUSH, including the 66G comeback lottery.
+- Harakiri Drive is a game-count add special zone with three-digit add expectation.
+- After bonus or RUSH ends, the machine has an internal 66G RUSH comeback state.
 
 ## Prototype Setting Targets
 
