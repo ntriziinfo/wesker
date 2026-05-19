@@ -76,6 +76,16 @@ After a bonus or RUSH ends and the machine returns to normal, it internally ente
 - Revolution RUSH comeback can return to Revolution RUSH or upgrade to Super Revolution RUSH.
 - Super Revolution RUSH comeback returns to Super Revolution RUSH.
 
+## Reel Strips
+
+Reel strips are listed from top to bottom.
+
+| Reel | Strip |
+| --- | --- |
+| Left | Red 7 / Cherry / Suika / Bell / Replay / Blank / Cherry / Suika / Bell / Replay / V / V / V / Bell / Replay / Blank / Cherry / Suika / Bell / Replay |
+| Middle | Cherry / Red 7 / Suika / Replay / Bell / Cherry / Blank / Suika / Replay / Bell / Cherry / V / Suika / Replay / Bell / Cherry / Blank / Suika / Replay / Bell |
+| Right | Suika / Bell / Red 7 / Replay / Bell / Suika / Bell / Blank / Replay / Bell / Suika / Bell / V / Replay / Bell / Suika / Bell / Cherry / Replay / Bell |
+
 ## Implementation Notes
 
 - Current HTML prototype still uses the earlier simple CZ -> AT game-count flow.
