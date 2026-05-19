@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wesker Spec Preview</title>
+<style>
+:root{--bg:#050607;--panel:#101416;--panel2:#171d20;--line:#313c42;--text:#f5f2e9;--muted:#9ca7aa;--red:#cf1729;--gold:#e2bd60;--green:#94ff5b;--cyan:#5ce4ff}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 30% 0,#2a080d 0,#08090a 430px,#030405 100%);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:0}.page{width:min(1160px,calc(100% - 32px));margin:0 auto;padding:24px 0 44px}.hero{min-height:250px;display:grid;align-items:end;padding:28px;border:1px solid #5a3338;border-radius:8px;background:linear-gradient(90deg,rgba(5,6,7,.32),rgba(5,6,7,.76)),url("assets/symbols/wesker_bar_5x3_alpha0_cropped.png") center/contain no-repeat,linear-gradient(135deg,#24070b,#070809);box-shadow:0 24px 70px rgba(0,0,0,.42)}h1{margin:0;font-size:48px;line-height:1;font-weight:1000;color:#fff;text-shadow:0 0 24px rgba(207,23,41,.45)}.lead{max-width:760px;margin:12px 0 0;color:#d8d0c2;font-size:16px;line-height:1.7}.grid{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;margin-top:14px}.band{margin-top:14px}.panel{border:1px solid var(--line);border-radius:8px;background:linear-gradient(180deg,var(--panel2),var(--panel));box-shadow:inset 0 0 24px rgba(255,255,255,.03);padding:16px}h2{margin:0 0 12px;font-size:18px;color:var(--gold)}h3{margin:18px 0 8px;font-size:14px;color:var(--green)}table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:8px 9px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left;vertical-align:top}th{color:#f2d887;font-weight:850;background:rgba(255,255,255,.04)}td:last-child,th:last-child{text-align:right}.rate td:first-child{font-weight:900;color:#fff}.pill{display:inline-flex;align-items:center;justify-content:center;min-width:56px;height:26px;border:1px solid #70404a;border-radius:6px;background:#21090d;color:#ffbcc3;font-weight:900}.flow{display:grid;gap:8px}.step{display:grid;grid-template-columns:130px 1fr;gap:10px;padding:10px;border:1px solid rgba(255,255,255,.08);border-radius:7px;background:#0b0f11}.step b{color:#fff}.step span{color:var(--muted);line-height:1.55}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.card{padding:12px;border:1px solid rgba(255,255,255,.08);border-radius:8px;background:#0b0f11;min-height:112px}.card .k{font-size:12px;color:var(--muted)}.card .v{margin-top:6px;font-size:24px;font-weight:1000;color:#fff}.card p{margin:8px 0 0;font-size:12px;color:#b8c1c2;line-height:1.55}.roles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.strip{display:grid;gap:5px}.strip-row{display:grid;grid-template-columns:30px 1fr;gap:6px;align-items:center;font-size:12px}.idx{color:#889396;text-align:right}.sym{height:28px;display:flex;align-items:center;gap:8px;padding:3px 8px;border:1px solid rgba(255,255,255,.08);border-radius:6px;background:#0b0f11;font-weight:850}.sym img{width:28px;height:22px;object-fit:contain}.blank{color:#6f787b}.note{margin-top:10px;color:var(--muted);font-size:12px;line-height:1.6}.state-title{margin:0 0 8px;font-size:15px;font-weight:950;color:#fff}.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:980px){.grid,.two{grid-template-columns:1fr}.cards,.roles{grid-template-columns:repeat(2,1fr)}h1{font-size:38px}}@media(max-width:620px){.cards,.roles{grid-template-columns:1fr}.hero{padding:20px}h1{font-size:30px}.step{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="page">
+  <section class="hero">
+    <div>
+      <h1>WESKER SPEC PREVIEW</h1>
+      <p class="lead">現在決めているWeskerスロット仕様の確認用HTML。機械割、小役確率、ボーナス、RUSH、引き戻し、リール配列をまとめて確認できます。</p>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="panel">
+      <h2>設定別機械割</h2>
+      <table class="rate">
+        <thead><tr><th>設定</th><th>目標</th><th>簡易シミュレーション</th></tr></thead>
+        <tbody id="settingRates"></tbody>
+      </table>
+      <p class="note">現行プロトタイプの簡易抽選モデルでの概算。正式実装でボーナス/RUSH状態機械が入ると再調整します。</p>
+    </div>
+    <div class="panel">
+      <h2>基本スペック</h2>
+      <div class="cards">
+        <div class="card"><div class="k">AT純増</div><div class="v">7.2pt</div><p>革命RUSH / 超革命RUSH共通</p></div>
+        <div class="card"><div class="k">天井</div><div class="v">500G</div><p>通常ゲーム数管理</p></div>
+        <div class="card"><div class="k">RUSH継続</div><div class="v">75%</div><p>革命RUSH</p></div>
+        <div class="card"><div class="k">上位継続</div><div class="v">90%</div><p>超革命RUSH</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band panel">
+    <h2>ゲームフロー</h2>
+    <div class="flow">
+      <div class="step"><b>革命ボーナス</b><span>疑似BIG。50G+α、平均470pt。666pt払い出しでRUSH確定。666pt到達後の残ゲームはVストック抽選。</span></div>
+      <div class="step"><b>決戦ボーナス</b><span>疑似REG。ベルナビ8回+バトル、平均110pt。バトル突破でRUSH、突破率約35%。</span></div>
+      <div class="step"><b>革命RUSH</b><span>通常AT。初期10〜100G+α、平均1320pt。継続ループ、G数上乗せ、セットストック。4連目到達で超革命RUSH。</span></div>
+      <div class="step"><b>超革命RUSH</b><span>上位AT。初期G数抽選は革命RUSHより約1.5倍優遇。平均2190pt。継続率90%。</span></div>
+      <div class="step"><b>ハラキリチャレンジ</b><span>RUSH終了後の3G高速継続ジャッジ。革命後約77%、超革命後約90%。66G引き戻し込み。</span></div>
+      <div class="step"><b>ハラキリドライブ</b><span>G数上乗せ特化ゾーン。3桁上乗せに期待。</span></div>
+      <div class="step"><b>引き戻し</b><span>BONUS / AT終了後、通常移行時に内部66GのRUSH引き戻し状態。革命からは革命or超革命、超革命からは超革命。</span></div>
+    </div>
+  </section>
+
+  <section class="band two">
+    <div class="panel">
+      <h2>小役確率</h2>
+      <div id="roleTables"></div>
+    </div>
+    <div class="panel">
+      <h2>リール配列</h2>
+      <div class="roles" id="reelStrips"></div>
+    </div>
+  </section>
+</main>
+
+<script>
+const settings=[
+  [1,'85%','85.5%'],[2,'90%','90.3%'],[3,'95%','95.4%'],
+  [4,'101%','101.4%'],[5,'108%','107.9%'],[6,'115%','115.4%']
+];
+const roleRates={
+  '通常':[['リプレイ','1/3.5'],['ベル','1/2.3'],['弱チェリー','1/10.4'],['強チェリー','1/41.5'],['確定チェリー','1/331.6'],['スイカ','1/11.8'],['チャンス目弱','1/20.7'],['チャンス目強','1/69.1'],['餡揃い','1/331.6'],['BAR揃い','1/690.8'],['7揃い','1/1036.2'],['レア役合算','1/3.6']],
+  '高確':[['リプレイ','1/4.1'],['ベル','1/2.6'],['弱チェリー','1/8.2'],['強チェリー','1/22.4'],['確定チェリー','1/299.3'],['スイカ','1/11.2'],['チャンス目弱','1/12.8'],['チャンス目強','1/32.1'],['餡揃い','1/224.5'],['BAR揃い','1/498.9'],['7揃い','1/748.3'],['レア役合算','1/2.7']],
+  'CZ':[['リプレイ','1/4.6'],['ベル','1/2.9'],['弱チェリー','1/8.8'],['強チェリー','1/14.7'],['確定チェリー','1/147.0'],['スイカ','1/9.8'],['チャンス目弱','1/11.0'],['チャンス目強','1/22.0'],['餡揃い','1/110.2'],['BAR揃い','1/176.4'],['7揃い','1/294.0'],['レア役合算','1/2.2']],
+  'AT':[['リプレイ','1/5.3'],['ベル','1/1.9'],['弱チェリー','1/11.9'],['強チェリー','1/23.8'],['確定チェリー','1/211.4'],['スイカ','1/13.6'],['チャンス目弱','1/19.0'],['チャンス目強','1/47.6'],['餡揃い','1/271.9'],['BAR揃い','1/475.8'],['7揃い','1/634.3'],['レア役合算','1/3.5']]
+};
+const strips={
+  '左':['赤7','チェリー','スイカ','ベル','リプレイ','ブランク','チェリー','スイカ','ベル','リプレイ','V','V','V','ベル','リプレイ','ブランク','チェリー','スイカ','ベル','リプレイ'],
+  '中':['チェリー','赤7','スイカ','リプレイ','ベル','チェリー','ブランク','スイカ','リプレイ','ベル','チェリー','V','スイカ','リプレイ','ベル','チェリー','ブランク','スイカ','リプレイ','ベル'],
+  '右':['スイカ','ベル','赤7','リプレイ','ベル','スイカ','ベル','ブランク','リプレイ','ベル','スイカ','ベル','V','リプレイ','ベル','スイカ','ベル','チェリー','リプレイ','ベル']
+};
+const iconMap={
+  '赤7':'assets/symbols/red7_5x3_FIXED_alpha0_cropped.png',
+  'チェリー':'assets/symbols/bfe33a88-a866-44cf-8928-02ae4f078cb3.png',
+  'スイカ':'assets/symbols/suika_bullet_alpha0_cropped.png',
+  'ベル':'assets/symbols/6a900b6c-4aaa-4599-8a81-f8a1afd7aee1.png',
+  'リプレイ':'assets/symbols/replay_biohazard_mark_alpha0.png'
+};
+function esc(v){return String(v).replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));}
+document.getElementById('settingRates').innerHTML=settings.map(r=>`<tr><td><span class="pill">設定${r[0]}</span></td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('');
+document.getElementById('roleTables').innerHTML=Object.entries(roleRates).map(([state,rows])=>`<h3>${state}</h3><table><tbody>${rows.map(r=>`<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join('')}</tbody></table>`).join('');
+document.getElementById('reelStrips').innerHTML=Object.entries(strips).map(([name,items])=>`<div class="strip"><div class="state-title">${name}リール</div>${items.map((item,i)=>`<div class="strip-row"><span class="idx">${i+1}</span><span class="sym ${item==='ブランク'?'blank':''}">${iconMap[item]?`<img src="${iconMap[item]}" alt="">`:''}${esc(item)}</span></div>`).join('')}</div>`).join('');
+</script>
+</body>
+</html>

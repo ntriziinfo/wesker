@@ -6,6 +6,8 @@ Wesker themed slot prototype.
 
 Open `wesker.html` in a browser, or serve this folder with a local static server.
 
+Open `wesker_spec_preview.html` to preview the current specification, setting targets, role probabilities, and reel strips.
+
 ## Current Flow
 
 - Normal / high-probability state draws CZ.
