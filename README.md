@@ -8,6 +8,8 @@ Open `wesker.html` in a browser, or serve this folder with a local static server
 
 Open `wesker_spec_preview.html` to preview the current specification, setting targets, role probabilities, and reel strips.
 
+Open `wesker_machine.html` to play the current machine-style prototype with bonus, RUSH, Harakiri Challenge, Harakiri Drive, and comeback state flow.
+
 ## Current Flow
 
 - Normal / high-probability state draws CZ.
