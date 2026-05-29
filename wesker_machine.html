@@ -21,9 +21,9 @@
       <nav class="menus"><button class="menu-btn" data-menu="status">STATUS</button><button class="menu-btn" data-menu="setting">SETTING</button><button class="menu-btn" data-menu="force">役指定</button><button class="menu-btn" data-menu="roles">出目</button><button class="menu-btn" data-menu="log">LOG</button></nav>
     </aside>
     <section class="stage">
-      <div class="lcd"><div class="mode" id="mode">通常</div><div class="message" id="resultText">BETで開始</div><div class="effect" id="effectText">1000G天井 / モード管理 / CZ / BONUS / RUSH</div><div class="meterbar"><span id="meter"></span></div></div>
-      <div class="reel-area"><div class="sub-lcd">SUB<br>MONITOR<b id="sideStatus">NORMAL</b></div><div class="reels"><div class="reel"></div><div class="reel"></div><div class="reel"></div></div><div class="side-spacer"></div></div>
-      <div class="lower-readout"><div class="sevenseg" id="afterBonusCounter">000G</div><div class="checkpoints" id="checkpointTrack"></div></div>
+      <div class="lcd" id="mainMonitor" data-monitor="main"><div class="mode" id="mode">通常</div><div class="message" id="resultText">BETで開始</div><div class="effect" id="effectText">1000G天井 / モード管理 / CZ / BONUS / RUSH</div><div class="meterbar"><span id="meter"></span></div></div>
+      <div class="reel-area"><div class="sub-lcd" id="leftSubMonitor" data-monitor="left-sub">SUB<br>MONITOR<b id="sideStatus">NORMAL</b></div><div class="reels"><div class="reel"></div><div class="reel"></div><div class="reel"></div></div><div class="side-spacer" id="rightSubMonitor" data-monitor="right-sub"></div></div>
+      <div class="lower-readout" id="bottomMonitor" data-monitor="bottom"><div class="sevenseg" id="afterBonusCounter">000G</div><div class="checkpoints" id="checkpointTrack"></div></div>
       <div class="controls"><button class="btn bet" id="spinBtn">BET</button><button class="btn stop" id="stop0">1 STOP</button><button class="btn stop" id="stop1">2 STOP</button><button class="btn stop" id="stop2">3 STOP</button><div class="auto-stack"><button class="btn auto" id="autoBtn">AUTO</button><button class="btn speed" id="speedBtn">SPEED</button></div><button class="btn skip" id="skipBtn">SKIP</button></div>
     </section>
   </main>
